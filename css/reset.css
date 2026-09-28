@@ -1,0 +1,44 @@
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html{
+    color-scheme: light dark;
+  }
+
+  body {
+    min-block-size: 100vh;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  img,
+  picture,
+  svg,
+  canvas {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  textarea:not([rows]) {
+    min-block-size: 10em;
+  }
+
+  :target {
+    scroll-margin-block: 5rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
